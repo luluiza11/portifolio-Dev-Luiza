@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Luiza - Desenvolvedora Front-End | Portfólio Profissional</title>
+    <meta name="description" content="Portfólio profissional de Luiza - Desenvolvedora Front-End especializada em React, Vue.js, TypeScript e desenvolvimento web moderno. Criando experiências digitais incríveis.">
+    <meta name="keywords" content="Desenvolvedor Front-End, React, Vue.js, TypeScript, Web Development">
+    <meta name="author" content="Luiza">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand">
+                <i class="fas fa-code"></i>
+                <span>Luiza</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Início</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#experience" class="nav-link">Experiência</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+        </div>
+        <div class="hero-container">
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <div>
+                        <h2>
+                            <span class="word">Olá,</span> <span class="word">sou</span> <span class="word gradient-text floating">Luiza</span>
+                        </h2>
+                        <p class="hero-subtitle">
+                            Desenvolvedora Front-End apaixonada por criar experiências digitais incríveis e interfaces modernas que transformam ideias em realidade
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary btn-xs">
+                                <i class="fas fa-star"></i>
+                                Ver Meus Projetos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="./hero_setup.jpg" alt="Luiza">
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                </div>
+            <div class="about-content">
+                <div class="about-animation">
+                    <div class="space-game-container" id="spaceGameContainer">
+                        <canvas id="spaceGameCanvas" width="350" height="500"></canvas>
+                        <div class="game-info">
+                            <div class="game-stats">
+                                <span>Pontos: <span id="gamePoints">0</span></span>
+                                <span>Vidas: <span id="gameLives">3</span></span>
+                            </div>
+                            <p class="game-instructions">Deslize o dedo para mover a nave | Tiros automáticos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=\"about-text scroll-animate-left\">
+                    <h3>Bem-vindo à minha história</h3>
+                    <p>
+                        Sou uma <strong>Desenvolvedora Júnior</strong> apaixonada por criar interfaces modernas 
+                        e interativas. Estou iniciando minha jornada na programação com foco em desenvolvimento 
+                        front-end, buscando constantemente aprender e evoluir minhas habilidades técnicas.
+                    </p>
+                    <p>
+                        Minha paixão é transformar ideias em experiências digitais envolventes. Dedico-me a 
+                        entender o usuário final, priorizando usabilidade, performance otimizada e design 
+                        responsivo em todos os meus projetos.
+                    </p>
+                    <p>
+                        Acredito que o código bem escrito é como uma obra de arte - deve ser funcional, elegante 
+                        e trazer alegria a quem o mantém. Estou sempre em busca de desafios que me ajudem a crescer 
+                        como desenvolvedora e contribuir para projetos incríveis.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projetos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1+</span>
+                            <span class="stat-label">Anos Exp.</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Dedicação</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary btn-sm">
+                        Vamos trabalhar juntos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <p class="section-description">Tecnologias e ferramentas que domino profundamente</p>
+                <span class="section-badge">Competências</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card scroll-animate-item" style="animation-delay: 0.1s">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <p>Componentes, hooks, state management com Redux</p>
+                    <span class="skill-level">Avançado</span>
+                </div>
+                <div class="skill-card scroll-animate-item" style="animation-delay: 0.2s">
+                    <div class="skill-icon">
+                        <i class="fab fa-vuejs"></i>
+                    </div>
+                    <h3>Vue.js</h3>
+                    <p>Vue 3, Composition API, Nuxt.js</p>
+                    <span class="skill-level">Avançado</span>
+                </div>
+                <div class="skill-card scroll-animate-item" style="animation-delay: 0.3s">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>ES6+, async/await, programação funcional</p>
+                    <span class="skill-level">Avançado</span>
+                </div>
+                <div class="skill-card scroll-animate-item" style="animation-delay: 0.4s">
+                    <div class="skill-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>TypeScript</h3>
+                    <p>Type safety, interfaces, genéricos</p>
+                    <span class="skill-level">Avançado</span>
+                </div>
+                <div class="skill-card scroll-animate-item" style="animation-delay: 0.5s">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5 & CSS3</h3>
+                    <p>Markup semântico, CSS Grid, Flexbox, animações</p>
+                    <span class="skill-level">Avançado</span>
+                </div>
+                <div class="skill-card scroll-animate-item" style="animation-delay: 0.6s">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git & DevOps</h3>
+                    <p>Controle de versão, CI/CD, deploy automático</p>
+                    <span class="skill-level">Intermediário</span>
+                </div>
+            </div>
+        </div>
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header scroll-animate">
+                    <h2 class="section-title">Meus Projetos</h2>
+                    <p class="section-description">Alguns dos trabalhos mais recentes e impactantes que desenvolvi</p>
+                </div>
+            <div class="projects-grid">
+                <div class="project-card scroll-animate-item" style="animation-delay: 0.1s">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?w=600&h=400&fit=crop" alt="E-commerce Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Ver Projeto" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Código Fonte" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">E-commerce Moderno</h3>
+                        <p class="project-description">
+                            Plataforma completa de e-commerce com carrinho persistente, pagamento integrado e dashboard admin.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scroll-animate-item" style="animation-delay: 0.2s">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Dashboard Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Ver Projeto" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Código Fonte" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Dashboard Analytics</h3>
+                        <p class="project-description">
+                            Painel administrativo com gráficos interativos, análise de dados em tempo real e relatórios customizáveis.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scroll-animate-item" style="animation-delay: 0.3s">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop" alt="Mobile App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Ver Projeto" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Código Fonte" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">App Mobile Responsivo</h3>                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">PWA</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <span class="section-badge">Trajetória</span>
+                <h2 class="section-title">Experiência Profissional</h2>
+                <p class="section-description">Minha jornada no desenvolvimento web</p>
+            </div>
+            <div class="experience-timeline">
+                <div class="experience-item scroll-animate-item" style="animation-delay: 0.1s">
+                    <div class="experience-marker"></div>
+                    <div class="experience-content">
+                        <div class="experience-date">2025 - Presente</div>
+                        <h3>Desenvolvedora Júnior Front-End</h3>
+                        <p class="experience-company">Em desenvolvimento profissional</p>
+                        <p class="experience-description">
+                            Desenvolvimento de interfaces web modernas com React e JavaScript, 
+                            aprendizado contínuo de boas práticas e padrões de design responsivo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience-item scroll-animate-item" style="animation-delay: 0.2s">
+                    <div class="experience-marker"></div>
+                    <div class="experience-content">
+                        <div class="experience-date">2024 - 2025</div>
+                        <h3>Bootcamp Front-End</h3>
+                        <p class="experience-company">Formação Profissional</p>
+                        <p class="experience-description">
+                            Especialização intensiva em desenvolvimento front-end, domínio de tecnologias 
+                            modernas e participação em projetos práticos com foco em aprendizagem.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience-item scroll-animate-item" style="animation-delay: 0.3s">
+                    <div class="experience-marker"></div>
+                    <div class="experience-content">
+                        <div class="experience-date">2023 - 2024</div>
+                        <h3>Primeiro Contato com Programação</h3>
+                        <p class="experience-company">Cursos Online</p>
+                        <p class="experience-description">
+                            Aprendizado de HTML, CSS, JavaScript e lógica de programação, 
+                            criação dos primeiros projetos pessoais e consolidação de fundações técnicas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <span class="section-badge">Conectar</span>
+                <h2 class="section-title">Vamos Conversar</h2>
+                <p class="section-description">Estou sempre aberta para novas oportunidades e projetos interessantes</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-cards">
+                    <a href="mailto:devluluh.11@gmail.com" class="contact-card scroll-animate-item" style="animation-delay: 0.1s">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <h4>Email</h4>
+                            <p>devluluh.11</p>
+                        </div>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="https://wa.me/5598984970428" class="contact-card scroll-animate-item" target="_blank" style="animation-delay: 0.2s">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <h4>WhatsApp</h4>
+                            <p>+55 98 98497-0428</p>
+                        </div>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+                <div class="contact-form-wrapper scroll-animate-right">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <input type="text" id="subject" name="subject" placeholder="Tema da mensagem" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fab fa-whatsapp"></i>
+                            Enviar via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <i class="fas fa-code"></i>
+                        <span>Luiza</span>
+                        <p>Desenvolvedora Front-End & Designer</p>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Navegação</h4>
+                        <a href="#home">Início</a>
+                        <a href="#about">Sobre</a>
+                        <a href="#skills">Habilidades</a>
+                        <a href="#projects">Projetos</a>
+                        <a href="#contact">Contato</a>
+                    </div>
+                    <div class="footer-social">
+                        <h4>Redes Sociais</h4>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/nluiza._?igsh=OGk3d2pxcHRjMmZj" class="social-link" target="_blank" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Luiza. Desenvolvido com <i class="fas fa-heart"></i> e muito café. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
